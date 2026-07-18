@@ -14,21 +14,41 @@ jobs:
     runs-on: ubuntu-latest
     if: "contains(github.event.pull_request.body, 'by deleting this comment block') || github.event.pull_request.body == ''"
     steps:
-      - uses: actions-ecosystem/action-add-labels@v1
+      - name: Label, close, and lock invalid PR
+        uses: actions/github-script@v8
         with:
-          labels: |
-            invalidpr
-      - uses: superbrothers/close-pull-request@v3
-        with:
-          # Post a comment just before closing a pull request
-          comment: |
-            It looks like you are attempting to push a change to the [Academic Pages][1] template repository, for help with deploying your own website please [start a new thread in the discussions][2] or see the [GitHub Docs: About pull requests][3] if you need help.
+          script: |
+            const issue_number = context.issue.number;
+            const { owner, repo } = context.repo;
+            const comment = [
+              'It looks like you are attempting to push a change to the [Academic Pages][1] template repository, for help with deploying your own website please [start a new thread in the discussions][2] or see the [GitHub Docs: About pull requests][3] if you need help.',
+              '',
+              '  [1]: https://github.com/academicpages/academicpages.github.io',
+              '  [2]: https://github.com/academicpages/academicpages.github.io/discussions',
+              '  [3]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests',
+            ].join('\n');
 
-              [1]: https://github.com/academicpages/academicpages.github.io
-              [2]: https://github.com/academicpages/academicpages.github.io/discussions
-              [3]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
-      - uses: sudo-bot/action-pull-request-lock@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: ${{ github.event.pull_request.number }}
-          lock-reason: spam
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number,
+              labels: ['invalidpr'],
+            });
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: comment,
+            });
+            await github.rest.pulls.update({
+              owner,
+              repo,
+              pull_number: issue_number,
+              state: 'closed',
+            });
+            await github.rest.issues.lock({
+              owner,
+              repo,
+              issue_number,
+              lock_reason: 'spam',
+            });
