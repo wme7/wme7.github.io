@@ -11,3 +11,9 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+
+# Required on Ruby 3.4+/4.x — removed from default stdlib; Jekyll 3.9 (via github-pages) does not declare them
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+gem 'logger'
