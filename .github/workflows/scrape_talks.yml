@@ -5,8 +5,8 @@ on:
     paths:
       - 'talks/**'
       - '_talks/**'
-      - 'talkmap.ipynb'
-      - 'talkmap.py'
+      - 'markdown_generator/talkmap.ipynb'
+      - 'markdown_generator/talkmap.py'
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
         enable-cache: true
 
     - name: Generate talk map
-      run: uv run --with python-frontmatter --with getorg --with geopy python talkmap.py
+      run: uv run --with python-frontmatter --with getorg --with geopy python markdown_generator/talkmap.py
 
     - name: Commit changes
       run: |

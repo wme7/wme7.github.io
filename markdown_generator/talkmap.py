@@ -1,12 +1,12 @@
 # Leaflet cluster map of talk locations
 #
-# Run this from the _talks/ directory, which contains .md files of all your
-# talks. This scrapes the location YAML field from each .md file, geolocates it
-# with geopy/Nominatim, and uses the getorg library to output data, HTML, and
-# Javascript for a standalone cluster map. This is functionally the same as the
-# #talkmap Jupyter notebook.
+# Run from the repo root or this directory. Scrapes the location YAML field from
+# each talk in _talks/, geolocates it with geopy/Nominatim, and uses getorg to
+# write HTML/JS into the repo-root talkmap/ folder.
+# This is functionally the same as talkmap.ipynb.
+from pathlib import Path
+
 import frontmatter
-import glob
 import getorg
 from geopy import Nominatim
 from geopy.exc import GeocoderTimedOut
@@ -14,8 +14,12 @@ from geopy.exc import GeocoderTimedOut
 # Set the default timeout, in seconds
 TIMEOUT = 5
 
+ROOT = Path(__file__).resolve().parent.parent
+TALKS_DIR = ROOT / "_talks"
+OUTPUT_DIR = ROOT / "talkmap"
+
 # Collect the Markdown files
-g = glob.glob("_talks/*.md")
+g = sorted(TALKS_DIR.glob("*.md"))
 
 # Prepare to geolocate
 geocoder = Nominatim(user_agent="academicpages.github.io")
@@ -53,4 +57,6 @@ for file in g:
 
 # Save the map
 m = getorg.orgmap.create_map_obj()
-getorg.orgmap.output_html_cluster_map(location_dict, folder_name="talkmap", hashed_usernames=False)
+getorg.orgmap.output_html_cluster_map(
+    location_dict, folder_name=str(OUTPUT_DIR), hashed_usernames=False
+)
