@@ -1,142 +1,374 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Manuel A. Diaz",
+    "email": "manuel.ade@gmail.com",
+    "phone": "+32 496 52 20 62",
+    "website": "https://wme7.github.io",
+    "summary": "Senior Research Engineer with 10+ years developing high-performance GPU-accelerated algorithms and solvers for computational fluid dynamics (CFD) and aeroacoustics (CAA). Currently at Cenaero ASBL (Gosselies, Belgium).",
     "location": {
       "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "postalCode": "1400",
+      "city": "Nivelles",
+      "countryCode": "BE",
+      "region": "Belgium"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=76LS3usAAAAJ"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0000-0002-0609-8139"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "wme7",
+        "url": "https://github.com/wme7"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "manuel-a-diaz",
+        "url": "https://www.linkedin.com/in/manuel-a-diaz"
       }
-    ]
+    ],
+    "label": "Ph.D. in Applied Mechanics · CFD · GPU computing"
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Cenaero ASBL",
+      "position": "Senior Research Engineer",
+      "website": "",
+      "startDate": "2022",
+      "endDate": "present",
+      "summary": "",
+      "highlights": [
+        "GPU port and optimization of FIDELIO (WINGS-II) with CUDA C++ and HIP/ROCm",
+        "Developed a GPU-accelerated FV-LB solver for rarefied gas flows (MaiSoVI)",
+        "Assessed GPU particle / MPM methods for mechanical engineering (VirtualLab)"
+      ]
+    },
+    {
+      "company": "Institut Pprime — University of Poitiers",
+      "position": "Postdoctoral Researcher ANR MAMIES",
+      "website": "",
+      "startDate": "2022",
+      "endDate": "2022",
+      "summary": "",
+      "highlights": [
+        "Experimental–computational work on time-reversal aeroacoustics for the MAMIES project",
+        "Project lead: Vincent Valeau"
+      ]
+    },
+    {
+      "company": "ISAE-ENSMA — Institut Pprime",
+      "position": "Postdoctoral Researcher FEDER/NAE",
+      "website": "",
+      "startDate": "2020",
+      "endDate": "2021",
+      "summary": "",
+      "highlights": [
+        "High-order immersed boundary methods (IBM) for aeroacoustics in Xcompact3d",
+        "Project leads: Véronique Fortuné and David Marx"
+      ]
+    },
+    {
+      "company": "Institut Jean Le Rond d'Alembert — Sorbonne University",
+      "position": "Postdoctoral Researcher ANR MAMIES",
+      "website": "",
+      "startDate": "2019",
+      "endDate": "2020",
+      "summary": "",
+      "highlights": [
+        "CFD/CAA algorithms; DG solvers and data assimilation / time-reversal for acoustic sources",
+        "Project leads: Régis Marchiano and Vincent Valeau"
+      ]
+    },
+    {
+      "company": "Institute of Biomedical Engineering and Nanomedicine (NHRI)",
+      "position": "Postdoctoral Researcher NSC",
+      "website": "",
+      "startDate": "2016",
+      "endDate": "2018",
+      "summary": "",
+      "highlights": [
+        "Multi-GPU WENO solvers for nonlinear acoustic propagation (CUDA, MPI, OpenMP)",
+        "Project lead: Maxim Solovchuk"
+      ]
+    },
+    {
+      "company": "Ingendehsa S.A. de C.V.",
+      "position": "Junior Mechanical Designer",
+      "website": "",
+      "startDate": "2008",
+      "endDate": "2009",
+      "summary": "",
+      "highlights": [
+        "Design of valves, cranes, and pressurized pipelines for hydroelectric plants",
+        "AutoCAD and Autodesk Inventor parameterized models linked to Excel calculations"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "National Taiwan University (NTU)",
+      "area": "Ph.D. in Applied Mechanics",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "endDate": "2015",
+      "gpa": "3.85",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "National Taiwan University (NTU)",
+      "area": "M.S. in Applied Mechanics",
       "studyType": "",
       "startDate": "",
       "endDate": "2012",
+      "gpa": "3.93",
+      "courses": []
+    },
+    {
+      "institution": "National Taiwan Normal University (NTNU)",
+      "area": "Chinese Language Studies",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2010",
       "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Universidad Centroamericana José Simeón Cañas (UCA)",
+      "area": "B.S. in Mechanical Engineering",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2008",
+      "gpa": "8.23",
+      "courses": []
+    },
+    {
+      "institution": "Instituto Técnico Ricaldone (ITR)",
+      "area": "Technical High School Diploma in Mechanics",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2002",
+      "gpa": "9.2",
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": [
+        "Spanish (Native)",
+        "English (C2)",
+        "Chinese (B1)",
+        "French (A2)"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": [
+        "Python 3",
+        "MATLAB",
+        "Mathematica",
+        "C/C++",
+        "Fortran",
+        "LaTeX",
+        "Git",
+        "Bash",
+        "CMake"
+      ]
+    },
+    {
+      "name": "Libraries",
+      "level": "",
+      "keywords": [
+        "CUDA",
+        "HIP/ROCm",
+        "MPI",
+        "MPI-IO",
+        "HDF5",
+        "OpenMP",
+        "PETSc"
+      ]
+    },
+    {
+      "name": "Tools",
+      "level": "",
+      "keywords": [
+        "Visual Studio Code",
+        "Vim",
+        "Emacs",
+        "Jupyter",
+        "NSight Compute",
+        "valgrind"
+      ]
+    },
+    {
+      "name": "Interests",
+      "level": "",
+      "keywords": [
+        "CFD",
+        "computational aeroacoustics (CAA)",
+        "thermoacoustics",
+        "data assimilation",
+        "time reversal",
+        "WENO/FVM/FDM/FEM/DG",
+        "GPU computing"
+      ]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Asymptotic-Preserving Weno Schemes for Boltzmann Model Equations and Rarefied Gas Flow Simulation",
+      "publisher": "In the proceedings of Proceedings of the Korea Society of Computational Fluids Engineering",
+      "releaseDate": "2014-01-01",
+      "website": "",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Numerical Solutions of Ideal Quantum Gas Dynamical Flows Governed by Semiclassical Ellipsoidal-Statistical Distribution",
+      "publisher": "In the proceedings of Proc. R. Soc. A",
+      "releaseDate": "2014-01-01",
+      "website": "https://doi.org/10.1098/rspa.2013.0413",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "High-Order Conservative Asymptotic-Preserving Schemes for Modeling Rarefied Gas Dynamical Flows with Boltzmann-BGK Equation",
+      "publisher": "Communications in Computational Physics",
+      "releaseDate": "2015-01-01",
+      "website": "https://doi.org/10.4208/cicp.171214.210715s",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Modeling Rarefied Gas Flows of Arbitrary Statistics with the Semiclassical Boltzmann-BGK Equation",
+      "publisher": "Institute of Applied Mechanics, Taiwan University",
+      "releaseDate": "2015-01-01",
+      "website": "http://dx.doi.org/10.6342/NTU.2015.00509",
+      "summary": ""
+    },
+    {
+      "name": "An Efficient Direct Solver for Rarefied Gas Flows with Arbitrary Statistics",
+      "publisher": "Journal of Computational Physics",
+      "releaseDate": "2016-01-01",
+      "website": "https://doi.org/10.1016/j.jcp.2015.09.003",
+      "summary": ""
+    },
+    {
+      "name": "A Conservative Numerical Scheme for Modeling Nonlinear Acoustic Propagation in Thermoviscous Homogeneous Media",
+      "publisher": "Journal of Computational Physics",
+      "releaseDate": "2018-01-01",
+      "website": "https://doi.org/10.1016/j.jcp.2018.02.005",
+      "summary": ""
+    },
+    {
+      "name": "High-performance multi-GPU solver for describing nonlinear acoustic waves in homogeneous thermoviscous media",
+      "publisher": "Computers &amp; Fluids",
+      "releaseDate": "2018-01-01",
+      "website": "https://doi.org/10.1016/j.compfluid.2018.03.008",
+      "summary": ""
+    },
+    {
+      "name": "Aeroacoustic Source Identification with Effects of Solid Boundaries Using a Numerical Time-reversal Technique",
+      "publisher": "In the proceedings of Forum Acusticum",
+      "releaseDate": "2020-01-01",
+      "website": "https://hal.science/hal-03229452v1",
+      "summary": ""
+    },
+    {
+      "name": "Identification of Aeroacoustics Sources with Data Assimilation",
+      "publisher": "In the proceedings of Forum Acusticum",
+      "releaseDate": "2020-01-01",
+      "website": "",
+      "summary": ""
+    },
+    {
+      "name": "A High-Order Immersed Boundary Technique for Computational Aeroacoustics",
+      "publisher": "In the proceedings of Congrès Français d&apos;Acoustique",
+      "releaseDate": "2022-01-01",
+      "website": "https://hal.science/hal-03848118v1",
+      "summary": ""
+    },
+    {
+      "name": "An efficient three-level weighted essentially non-oscillatory scheme for hyperbolic equations",
+      "publisher": "Computational and Applied Mathematics",
+      "releaseDate": "2023-01-01",
+      "website": "https://doi.org/10.1007/s40314-023-02214-z",
+      "summary": ""
+    },
+    {
+      "name": "Localizing aeroacoustic sources in complex geometries: A hybrid method coupling 3D microphone array and time-reversal",
+      "publisher": "Journal of Sound and Vibration",
+      "releaseDate": "2024-01-01",
+      "website": "https://doi.org/10.1016/j.jsv.2024.118452",
+      "summary": ""
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
+      "name": "Asymptotic-Preserving WENO Schemes for Boltzmann Model Equations and Rarefied Gas Flow Simulation",
+      "event": "Korea Society of Computational Fluids Engineering",
+      "date": "2014-01-01",
+      "location": "Korea",
       "description": ""
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
+      "name": "Best Paper Presentation, NHRI Research Day",
+      "event": "National Health Research Institutes (NHRI)",
+      "date": "2018-01-01",
+      "location": "Zhunan, Taiwan",
       "description": ""
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
+      "name": "Identification of Aeroacoustics Sources with Data Assimilation",
+      "event": "Forum Acusticum",
+      "date": "2020-12-07",
+      "location": "Lyon, France",
       "description": ""
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
+      "name": "Aeroacoustic Source Identification with Effects of Solid Boundaries Using a Numerical Time-reversal Technique",
+      "event": "Forum Acusticum",
+      "date": "2020-12-07",
+      "location": "Lyon, France",
+      "description": ""
+    },
+    {
+      "name": "A High-Order Immersed Boundary Technique for Computational Aeroacoustics",
+      "event": "Congrès Français d'Acoustique",
+      "date": "2022-04-11",
+      "location": "France",
       "description": ""
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
+      "course": "Teaching Assistant — Nanoscale Energy Transport",
+      "institution": "Institute of Applied Mechanics, National Taiwan University (NTU)",
+      "date": "2014-09-01",
+      "role": "Teaching assistant",
       "description": ""
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
+      "course": "Fluid Mechanics Lab Instructor",
+      "institution": "ENSIP — University of Poitiers",
+      "date": "2020-09-01",
+      "role": "Laboratory",
+      "description": ""
+    },
+    {
+      "course": "LaTeX Instructor",
+      "institution": "Tecnológico Nacional de México",
+      "date": "2021-01-01",
+      "role": "Certification course",
       "description": ""
     }
   ],

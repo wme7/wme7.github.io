@@ -27,17 +27,20 @@ import re
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
     "proceeding": {
-        "file" : "proceedings.bib",
+        "file" : "../files/proceedings.bib",
         "venuekey": "booktitle",
         "venue-pretext": "In the proceedings of ",
+        # Must match a key under publication_category in _config.yml
+        "category": "conferences",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
         
     },
     "journal":{
-        "file": "pubs.bib",
+        "file": "../files/publications.bib",
         "venuekey" : "journal",
         "venue-pretext" : "",
+        "category": "manuscripts",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
     } 
@@ -116,6 +119,7 @@ for pubsource in publist:
             md = "---\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + '"\n'
             
             md += """collection: """ +  publist[pubsource]["collection"]["name"]
+            md += """\ncategory: """ +  publist[pubsource]["category"]
 
             md += """\npermalink: """ + publist[pubsource]["collection"]["permalink"]  + html_filename
             
@@ -129,11 +133,15 @@ for pubsource in publist:
 
             md += "\nvenue: '" + html_escape(venue) + "'"
             
-            url = False
-            if "url" in b.keys():
-                if len(str(b["url"])) > 5:
-                    md += "\npaperurl: '" + b["url"] + "'"
-                    url = True
+            paper_link = ""
+            if "url" in b.keys() and len(str(b["url"])) > 5:
+                paper_link = b["url"]
+            elif "doi" in b.keys() and len(str(b["doi"])) > 5:
+                doi = str(b["doi"]).strip()
+                paper_link = doi if doi.startswith("http") else f"https://doi.org/{doi}"
+
+            if paper_link:
+                md += "\npaperurl: '" + paper_link + "'"
 
             md += "\ncitation: '" + html_escape(citation) + "'"
 
@@ -144,8 +152,8 @@ for pubsource in publist:
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
 
-            if url:
-                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
+            if paper_link:
+                md += "\n[Access paper here](" + paper_link + "){:target=\"_blank\"}\n" 
             else:
                 md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
 
