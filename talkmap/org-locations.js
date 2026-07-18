@@ -30,7 +30,7 @@ var addressPoints = [
     -4.2501687
   ],
   [
-    "Best Paper Presentation, NHRI Research Day<br />National Health Research Institutes (NHRI); Zhunan, Taiwan",
+    "Nonlinear Models for Describing Highly Nonlinear Acoustic Waves<br />National Health Research Institutes (NHRI); Zhunan, Taiwan",
     24.68374,
     120.8734318
   ],
