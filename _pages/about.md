@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Research Engineer in CFD & GPU Computing"
+title: "Computational Scientist — CFD, CAA & GPU Computing "
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a **Senior Research Engineer** at [Cenaero ASBL](https://www.cenaero.be/) (Gosselies, Belgium), working on high-performance numerical methods for computational fluid dynamics (CFD) and computational aeroacoustics (CAA). My day-to-day work is building and accelerating scientific solvers—often with **NVIDIA CUDA** and **AMD HIP/ROCm**—so that production CFD codes run efficiently on modern GPU and multi-GPU systems.
+I work at the intersection of CFD, aeroacoustics, and GPU computing, with a focus on building and accelerating high-performance scientific solvers on **NVIDIA** and **AMD** platforms. After serving as Senior Research Engineer at [Cenaero ASBL](https://www.cenaero.be/), I am transitioning toward new opportunities—either contributing to a technology startup or pursuing an associate professorship in my home country—while continuing to develop methods that make advanced CFD practical at scale.
 
 Before joining Cenaero, I held postdoctoral positions in France and Taiwan (Institut Pprime / ENSMA, Sorbonne University, and NHRI), focusing on immersed boundary methods, time-reversal aeroacoustics, data assimilation, and multi-GPU WENO schemes for nonlinear acoustics. I earned my Ph.D. in Applied Mechanics from National Taiwan University, with a thesis on rarefied gas flows modeled by the semiclassical Boltzmann–BGK equation.
 
