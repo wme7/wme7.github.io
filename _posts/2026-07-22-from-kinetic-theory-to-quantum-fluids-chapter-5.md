@@ -459,7 +459,11 @@ $$
 Substituting the previous results,
 
 $$
-\begin{aligned} D\ln f^{eq} ={}& -\partial_ku_k +c_k\partial_k\ln n \ & + \left( \frac{\beta c^2}{T} -\frac{3}{2T} \right) \left( -\frac{2}{3}T\partial_ku_k + c_k\partial_kT \right) \ & = \frac{2\beta}{\rho} c_i\partial_ip + 2\beta c_ic_j\partial_ju_i. \end{aligned}
+\begin{aligned}
+D\ln f^{eq} 
+=& -\partial_ku_k + c_k\partial_k\ln n + \left( \frac{\beta c^2}{T} -\frac{3}{2T} \right) \left( -\frac{2}{3}T\partial_ku_k + c_k\partial_kT \right) \\
+&+ \frac{2\beta}{\rho} c_i\partial_ip + 2\beta c_ic_j\partial_ju_i.
+\end{aligned}
 $$
 
 Everything now depends only on spatial gradients.

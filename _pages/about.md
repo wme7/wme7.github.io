@@ -26,7 +26,8 @@ On this site
 ======
 * [Publications](/publications/) — journal articles and conference papers  
 * [Talks](/talks/) — selected presentations  
-* [Teaching](/teaching/) — courses and labs  
+* [Teaching](/teaching/) — courses and labs
+* [Blog](/blog/) — blog posts on computational science and engineering
 * [CV](/cv-json/) — academic and industry résumés (PDF downloads included)
 
 You can also find me on [GitHub](https://github.com/wme7), [Google Scholar](https://scholar.google.com/citations?user=76LS3usAAAAJ), and [ORCID](https://orcid.org/0000-0002-0609-8139).
