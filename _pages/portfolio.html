@@ -5,10 +5,12 @@ permalink: /portfolio/
 author_profile: true
 ---
 
+A selection of projects spanning academic research, engineering prototypes, and personal explorations—mostly at the intersection of mechanics, numerics, and computation.
+
 {% include base_path %}
 
 
-{% for post in site.portfolio %}
+{% for post in site.portfolio reversed %}
   {% include archive-single.html %}
 {% endfor %}
 
