@@ -1,5 +1,5 @@
 ---
-title: '`cluster-smi`: Hardware Monitor for Raspberry Pi Clusters'
+title: '`cluster-smi`: CLI tool for monitoring Raspberry Pi clusters'
 date: 2026-07-26
 permalink: /posts/2026/07/rpi-comp-cluster-smi-app/
 tags:
